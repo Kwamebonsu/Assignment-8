@@ -8,7 +8,7 @@ package assignment.pkg8;
  *
  * @author bonsk5852
  */
-public class Assignment8 {
+public class A8Q1 {
 
     /**
      * @param args the command line arguments
