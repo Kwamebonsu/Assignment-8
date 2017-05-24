@@ -89,7 +89,10 @@ public class Face extends JComponent {
         // GAME DRAWING GOES HERE 
         // Draw hair
         g.setColor(Color.BLACK);
+        // High Top
         g.fillRoundRect(200, 150, 400, 400, 10, 10);
+        // Afro
+//        g.fillOval(0, 0, 800, 600);
         // Draw a head
         g.setColor(tan);
         g.fillOval(200, 200, 400, 600);
@@ -111,8 +114,15 @@ public class Face extends JComponent {
         g.fillOval(450, eyeYPosition, 100, eyeHeight);
         // Draw eyebrows
         g.setColor(Color.BLACK);
-        g.fillRect(250, eyebrowHeight, 100, 15);
-        g.fillRect(450, eyebrowHeight, 100, 15);
+        // Square eyebrows
+//        g.fillRect(250, eyebrowHeight, 100, 15);
+//        g.fillRect(450, eyebrowHeight, 100, 15);
+        // Curved eyebrows
+        g.fillOval(250, eyebrowHeight - 10, 100, 15);
+        g.fillOval(450, eyebrowHeight - 10, 100, 15);
+        g.setColor(tan);
+        g.fillOval(250, eyebrowHeight, 100, 15);
+        g.fillOval(450, eyebrowHeight, 100, 15);
         // Draw details on the eyes
         g.setColor(Color.CYAN);
         g.fillOval(irisX1, irisY, iris, iris);
